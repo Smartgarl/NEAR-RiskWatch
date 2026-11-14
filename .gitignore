@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+*.pyc
+riskwatch.db
+frontend copy/
+frontend copy 2/
+frontend copy 3/
+hello.py
