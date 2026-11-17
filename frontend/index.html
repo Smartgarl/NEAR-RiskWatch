@@ -430,6 +430,7 @@ async function loadPortfolio() {
     if (!response.ok) throw new Error('Portfolio request failed');
     const data = await response.json();
     const tokens = data.tokens || [];
+    setMessage('systemStatus', 'Portfolio connected');
     document.getElementById('tokenCount').textContent = data.total_tokens ?? tokens.length;
     list.innerHTML = '';
     if (!tokens.length) {
